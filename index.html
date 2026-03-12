@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SweetSide</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Side</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="header__inner">
+
+      <a href="#accueil" class="header__logo">SWEET SIDE</a>
+
+      <nav class="navbar">
+        <ul class="navbar__list">
+
+          <li class="navbar__item">
+            <a href="#accueil" class="navbar__link">Accueil</a>
+          </li>
+
+          <!-- SWEET SIDE dropdown -->
+          <li class="navbar__item navbar__item--dropdown">
+            <span class="navbar__link navbar__link--dropdown">
+              Sweet Side <span class="navbar__arrow">▾</span>
+            </span>
+            <ul class="dropdown">
+              <li><a href="#cookies" class="dropdown__link">Cookies</a></li>
+              <li><a href="#pizza-cookies" class="dropdown__link">Pizza cookies</a></li>
+              <li><a href="#brownies" class="dropdown__link">Brownies & blondies</a></li>
+              <li><a href="#cupcakes" class="dropdown__link">Cupcakes garnis</a></li>
+              <li><a href="#gateaux" class="dropdown__link">Gâteaux à partager</a></li>
+              <li><a href="#tablettes" class="dropdown__link">Tablettes & praliné</a></li>
+            </ul>
+          </li>
+
+          <!-- SAVORY SIDE dropdown -->
+          <li class="navbar__item navbar__item--dropdown">
+            <span class="navbar__link navbar__link--dropdown">
+              Savory Side <span class="navbar__arrow">▾</span>
+            </span>
+            <ul class="dropdown">
+              <li><a href="#brunch" class="dropdown__link">Brunch</a></li>
+              <li><a href="#buffet" class="dropdown__link">Buffet Side</a></li>
+              <li><a href="#event" class="dropdown__link">Event</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section id="accueil" class="section section--hero">
+      <h1 class="hero__title">L'art de la gourmandise</h1>
+      <p class="hero__subtitle">Créations artisanales faites avec amour</p>
+      <a href="#cookies" class="btn">Découvrir</a>
+    </section>
+
+    <section id="cookies" class="section">
+    <h2 class="section__title">Cookies</h2>
+    <div class="products__grid">
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Bueno</h3>
+            <p class="product-card__desc">Chocolat noir, éclats de Kinder Bueno, cœur fondant</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Oreo</h3>
+            <p class="product-card__desc">Chocolat blanc, chunks d'Oreo, cœur crémeux</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Tiramisu</h3>
+            <p class="product-card__desc">Mascarpone, café, cacao, biscuit cuillère</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Spéculoos</h3>
+            <p class="product-card__desc">Pâte de spéculoos, chocolat blanc, cannelle</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Noisette</h3>
+            <p class="product-card__desc">Praliné noisette, chocolat au lait, éclats croquants</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Cookie Pistache</h3>
+            <p class="product-card__desc">Pâte de pistache, chocolat blanc, pistaches concassées</p>
+            <span class="product-card__price">2,50 €</span>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="pizza-cookies" class="section">
+      <h2 class="section__title">Pizza cookies</h2>
+    </section>
+
+    <section id="brownies" class="section">
+      <h2 class="section__title">Brownies & blondies</h2>
+    </section>
+
+    <section id="cupcakes" class="section">
+      <h2 class="section__title">Cupcakes garnis</h2>
+    </section>
+
+    <section id="gateaux" class="section">
+      <h2 class="section__title">Gâteaux à partager</h2>
+    </section>
+
+    <section id="tablettes" class="section">
+      <h2 class="section__title">Tablettes & praliné</h2>
+    </section>
+
+    <section id="brunch" class="section">
+      <h2 class="section__title">Brunch</h2>
+    </section>
+
+    <section id="buffet" class="section">
+      <h2 class="section__title">Buffet Side</h2>
+    </section>
+
+    <section id="event" class="section">
+      <h2 class="section__title">Event</h2>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section__title">Contact</h2>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__name">SWEET SIDE</p>
+    <p class="footer__tagline">Créations artisanales faites avec amour</p>
+    <p class="footer__copy">&copy; 2025 Sweet Side — Tous droits réservés</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
