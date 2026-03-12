@@ -12,9 +12,9 @@
   <header class="header">
     <div class="header__inner">
 
-      <a href="#accueil" class="header__logo">SWEET SIDE</a>
+    <a href="#accueil" class="header__logo">SWEET SIDE</a>
 
-      <nav class="navbar">
+    <nav class="navbar">
         <ul class="navbar__list">
 
           <li class="navbar__item">
@@ -53,7 +53,7 @@
           </li>
 
         </ul>
-      </nav>
+        </nav>
 
     </div>
   </header>
@@ -61,9 +61,27 @@
   <!-- MAIN -->
   <main>
     <section id="accueil" class="section section--hero">
-      <h1 class="hero__title">L'art de la gourmandise</h1>
-      <p class="hero__subtitle">Créations artisanales faites avec amour</p>
-      <a href="#cookies" class="btn">Découvrir</a>
+    <div class="hero__left">
+        <span class="hero__tag">Créations artisanales</span>
+        <h1 class="hero__title">L'art de la<br>gourmandise</h1>
+        <div class="hero__line"></div>
+        <p class="hero__subtitle">Cookies, gâteaux, brunchs —<br>tout fait maison avec amour.</p>
+        <a href="#cookies" class="btn">Découvrir</a>
+    </div>
+    <div class="hero__right">
+        <div class="hero__img-main">
+        <img src="assets/images/hero-main.jpg" alt="Création Sweet Side" class="hero__img" />
+        </div>
+        <div class="hero__img-row">
+        <div class="hero__img-small">
+            <img src="assets/images/hero-small-1.jpg" alt="Nouveauté Sweet Side" class="hero__img" />
+        </div>
+        <div class="hero__img-small">
+            <img src="assets/images/hero-small-2.jpg" alt="Nouveauté Sweet Side" class="hero__img" />
+        </div>
+        </div>
+        <span class="hero__img-caption">Nouveautés de la semaine</span>
+    </div>
     </section>
 
     <section id="cookies" class="section">
@@ -128,8 +146,57 @@
     </section>
 
     <section id="pizza-cookies" class="section">
-      <h2 class="section__title">Pizza cookies</h2>
-    </section>
+    <h2 class="section__title">Pizza cookies</h2>
+    <p class="section__desc">Une pizza... en version cookie. À partager ou pas.</p>
+    <div class="products__grid">
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Pistachio Lover</h3>
+            <p class="product-card__desc">Pâte de pistache, chocolat blanc, pistaches concassées</p>
+            <span class="product-card__price">12,00 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Peanut Rush</h3>
+            <p class="product-card__desc">Beurre de cacahuète, chocolat au lait, éclats croquants</p>
+            <span class="product-card__price">12,00 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Kinder Dreams</h3>
+            <p class="product-card__desc">Chocolat Kinder, noisette, cœur fondant façon Bueno</p>
+            <span class="product-card__price">12,00 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Red Velvet</h3>
+            <p class="product-card__desc">Pâte red velvet, cream cheese, copeaux de chocolat blanc</p>
+            <span class="product-card__price">12,00 €</span>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-card__img-placeholder"></div>
+        <div class="product-card__body">
+            <h3 class="product-card__name">Prestige Framboise</h3>
+            <p class="product-card__desc">Framboise fraîche, chocolat blanc, coulis maison</p>
+            <span class="product-card__price">12,00 €</span>
+        </div>
+        </div>
+
+    </div>
+    </section>  
 
     <section id="brownies" class="section">
       <h2 class="section__title">Brownies & blondies</h2>
