@@ -46,7 +46,14 @@ dropdownItems.forEach(item => {
     link.addEventListener('click', (e) => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
-        item.classList.toggle('open');
+        e.stopPropagation();
+        const isOpen = item.classList.contains('open');
+        dropdownItems.forEach(i => {
+          i.classList.remove('open');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+        }
       }
     });
   }
