@@ -413,3 +413,158 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+/* ===== CATEGORY TITLE ===== */
+.category__title {
+  font-family: 'Georgia', serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888780;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* ===== COOKIES MENTIONS ===== */
+.cookies__mentions {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  border: 0.5px solid #E8E0D8;
+  border-left: 2px solid #C0392B;
+  border-radius: 0;
+}
+
+.cookies__mentions p {
+  font-size: 0.78rem;
+  color: #888780;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.cookies__mentions p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== PRODUCT CARD PRICES ===== */
+.product-card__prices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product-card__price-divider {
+  color: #E8E0D8;
+  font-size: 0.85rem;
+}
+
+.product-card__price--only {
+  font-style: italic;
+}
+
+
+/* ===== BROWNIE SPECIAL ===== */
+.brownie__special {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background-color: #FFFFFF;
+  border: 0.5px solid #E8E0D8;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.brownie__special-img {
+  height: 100%;
+  min-height: 180px;
+}
+
+.brownie__special-body {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* ===== BROWNIE OPTIONS ===== */
+.brownie__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 0.5px solid #E8E0D8;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.brownie__option-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 0.5px solid #E8E0D8;
+}
+
+.brownie__option-item:last-child {
+  border-bottom: none;
+}
+
+.brownie__option-name {
+  font-family: 'Georgia', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #1A1A1A;
+}
+
+.brownie__option-desc {
+  font-size: 0.78rem;
+  color: #888780;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
+
+.brownie__option-price {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #C0392B;
+  white-space: nowrap;
+}
+
+
+/* ===== FOOTER SOCIALS ===== */
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__social-link {
+  color: #888780;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.footer__social-link:hover {
+  color: #C0392B;
+}
+
+.footer__modalites {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #444441;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.footer__modalites:hover {
+  color: #888780;
+}

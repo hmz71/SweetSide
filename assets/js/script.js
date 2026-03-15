@@ -1,8 +1,8 @@
 const cards = document.querySelectorAll('.product-card');
 
 cards.forEach((card, index) => {
-  card.classList.add('fade-in');
-  card.style.transitionDelay = `${index * 0.1}s`;
+    card.classList.add('fade-in');
+    card.style.transitionDelay = `${index * 0.05}s`;
 });
 
 const observer = new IntersectionObserver(entries => {
