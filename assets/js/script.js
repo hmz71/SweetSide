@@ -27,3 +27,27 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scrolled');
   }
 });
+
+const burger = document.getElementById('burger');
+const navList = document.querySelector('.navbar__list');
+
+if (burger) {
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navList.classList.toggle('open');
+  });
+}
+
+const dropdownItems = document.querySelectorAll('.navbar__item--dropdown');
+
+dropdownItems.forEach(item => {
+  const link = item.querySelector('.navbar__link--dropdown');
+  if (link) {
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        item.classList.toggle('open');
+      }
+    });
+  }
+});

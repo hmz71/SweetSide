@@ -786,3 +786,170 @@ body {
   letter-spacing: 0.3px;
   line-height: 1.6;
 }
+
+
+
+
+/* ===== BURGER MENU ===== */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger__line {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background-color: #F0EDE8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active .burger__line:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .burger__line:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* Burger visible sur mobile */
+  .burger {
+    display: flex;
+  }
+
+  /* Navbar cachée par défaut sur mobile */
+  .navbar__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 1rem 0;
+    border-top: 1px solid #2E2E2E;
+    z-index: 99;
+    gap: 0;
+  }
+
+  .navbar__list.open {
+    display: flex;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 12px 2rem;
+    font-size: 0.85rem;
+  }
+
+  /* Dropdown sur mobile */
+  .dropdown {
+    position: static;
+    transform: none;
+    left: 0;
+    background-color: #111111;
+    border: none;
+    border-radius: 0;
+    min-width: 100%;
+    padding: 0;
+    display: none;
+  }
+
+  .navbar__item--dropdown.open .dropdown {
+    display: block;
+  }
+
+  .dropdown__link {
+    padding: 10px 3rem;
+    font-size: 0.78rem;
+    color: #888780;
+  }
+
+  /* Hero responsive */
+  .section--hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero__left {
+    padding: 3rem 1.5rem;
+    border-right: none;
+    border-bottom: 0.5px solid #E8E0D8;
+  }
+
+  .hero__right {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Sections responsive */
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Brownie special responsive */
+  .brownie__special {
+    grid-template-columns: 1fr;
+  }
+
+  .brownie__special-img {
+    height: 200px;
+  }
+
+  .brownie__special-body {
+    padding: 1.25rem;
+  }
+
+  /* Brownie options responsive */
+  .brownie__option-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .brownie__option-price {
+    color: #C0392B;
+    font-size: 0.8rem;
+  }
+
+  /* Tiramisu table responsive */
+  .tiramisu__header,
+  .tiramisu__row {
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px 12px;
+    gap: 0.5rem;
+  }
+
+  .tiramisu__name {
+    font-size: 0.78rem;
+  }
+
+  .tiramisu__price {
+    font-size: 0.75rem;
+  }
+
+  /* Livraison grid responsive */
+  .livraison__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Header inner */
+  .header__inner {
+    position: relative;
+  }
+
+}
