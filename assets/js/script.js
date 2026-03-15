@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(
-  '.product-card, .univers__card, .tiramisu__row, .social__link, .contact__info, .brownie__special'
+  '.product-card, .univers__card, .tiramisu__row, .social__link, .contact__info, .brownie__special, .modalite__bloc'
 );
 
 const observer = new IntersectionObserver(entries => {

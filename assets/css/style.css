@@ -697,3 +697,92 @@ body {
   text-align: center;
   font-style: italic;
 }
+
+
+/* ===== MODALITES ===== */
+.section--modalites {
+  max-width: 800px;
+}
+
+.modalite__bloc {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 0.5px solid #E8E0D8;
+}
+
+.modalite__bloc:last-child {
+  border-bottom: none;
+}
+
+.modalite__titre {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #C0392B;
+  margin-bottom: 1rem;
+}
+
+.modalite__texte {
+  font-size: 0.85rem;
+  color: #444441;
+  letter-spacing: 0.3px;
+  line-height: 1.9;
+  margin-bottom: 0.75rem;
+}
+
+.modalite__texte:last-child {
+  margin-bottom: 0;
+}
+
+.modalite__texte--warning {
+  color: #888780;
+  font-style: italic;
+}
+
+.modalite__liste {
+  list-style: none;
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+.modalite__liste li {
+  font-size: 0.85rem;
+  color: #444441;
+  letter-spacing: 0.3px;
+  padding: 6px 0 6px 1rem;
+  border-left: 2px solid #C0392B;
+  margin-bottom: 6px;
+}
+
+/* ===== LIVRAISON GRID ===== */
+.livraison__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.livraison__zone {
+  background-color: #FFFFFF;
+  border: 0.5px solid #E8E0D8;
+  border-radius: 2px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.livraison__prix {
+  display: block;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  color: #C0392B;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.livraison__villes {
+  font-size: 0.75rem;
+  color: #888780;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
