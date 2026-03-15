@@ -628,7 +628,7 @@ body {
 .tiramisu__table {
   border: 0.5px solid #E8E0D8;
   border-radius: 2px;
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 2rem;
 }
 
@@ -658,17 +658,6 @@ body {
   transition: background-color 0.15s ease;
 }
 
-.tiramisu__row:last-child {
-  border-bottom: 0.5px solid #E8E0D8;
-}
-
-.tiramisu__table {
-  border-bottom: 0.5px solid #E8E0D8;
-}
-
-.tiramisu__row:last-child {
-  border-bottom: 0.5px solid #E8E0D8;
-}
 
 .tiramisu__row:hover {
   background-color: #F5F0EC;
@@ -690,4 +679,21 @@ body {
   letter-spacing: 1px;
   color: #C0392B;
   text-align: center;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact__info {
+  margin-top: 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__info-text {
+  font-size: 0.85rem;
+  color: #888780;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  text-align: center;
+  font-style: italic;
 }
