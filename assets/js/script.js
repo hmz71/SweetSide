@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.product-card');
+const cards = document.querySelectorAll('.product-card, .univers__card');
 
 cards.forEach((card, index) => {
     card.classList.add('fade-in');
