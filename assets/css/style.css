@@ -621,3 +621,65 @@ body {
   color: #888780;
   letter-spacing: 0.5px;
 }
+
+
+
+/* ===== TIRAMISU TABLE ===== */
+.tiramisu__table {
+  border: 0.5px solid #E8E0D8;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.tiramisu__header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 12px 20px;
+  background-color: #1A1A1A;
+  gap: 1rem;
+}
+
+.tiramisu__header .tiramisu__col-price {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #B0A898;
+  text-align: center;
+}
+
+.tiramisu__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 12px 20px;
+  gap: 1rem;
+  border-bottom: 0.5px solid #E8E0D8;
+  align-items: center;
+  transition: background-color 0.15s ease;
+}
+
+.tiramisu__row:last-child {
+  border-bottom: none;
+}
+
+.tiramisu__row:hover {
+  background-color: #F5F0EC;
+}
+
+.tiramisu__row--option {
+  background-color: #FAF7F5;
+}
+
+.tiramisu__name {
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: #1A1A1A;
+}
+
+.tiramisu__price {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #C0392B;
+  text-align: center;
+}

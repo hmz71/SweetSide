@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.product-card, .univers__card');
+const cards = document.querySelectorAll('.product-card, .univers__card, .tiramisu__row');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
