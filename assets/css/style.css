@@ -659,7 +659,7 @@ body {
 }
 
 .tiramisu__row:last-child {
-  border-bottom: none;
+  border-bottom: 0.5px solid #E8E0D8;
 }
 
 .tiramisu__row:hover {
