@@ -666,6 +666,10 @@ body {
   border-bottom: 0.5px solid #E8E0D8;
 }
 
+.tiramisu__row:last-child {
+  border-bottom: 0.5px solid #E8E0D8;
+}
+
 .tiramisu__row:hover {
   background-color: #F5F0EC;
 }
