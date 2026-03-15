@@ -47,11 +47,27 @@ dropdownItems.forEach(item => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
         e.stopPropagation();
-        const isOpen = item.classList.contains('open');
-        dropdownItems.forEach(i => {
-          i.classList.remove('open');
-        });
-        if (!isOpen) {
+
+        const isAlreadyOpen = item.classList.contains('open');
+
+        dropdownItems.forEach(i => i.classList.remove('open'));
+
+        if (!isAlreadyOpen) {
+          item.classList.add('open');
+        }
+      }
+    });
+
+    link.addEventListener('touchend', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isAlreadyOpen = item.classList.contains('open');
+
+        dropdownItems.forEach(i => i.classList.remove('open'));
+
+        if (!isAlreadyOpen) {
           item.classList.add('open');
         }
       }
