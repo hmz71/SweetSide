@@ -43,34 +43,22 @@ const dropdownItems = document.querySelectorAll('.navbar__item--dropdown');
 dropdownItems.forEach(item => {
   const link = item.querySelector('.navbar__link--dropdown');
   if (link) {
-    link.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        e.stopPropagation();
+    const toggleDropdown = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
 
-        const isAlreadyOpen = item.classList.contains('open');
+      const isAlreadyOpen = item.classList.contains('open');
+      dropdownItems.forEach(i => i.classList.remove('open'));
 
-        dropdownItems.forEach(i => i.classList.remove('open'));
-
-        if (!isAlreadyOpen) {
-          item.classList.add('open');
-        }
+      if (!isAlreadyOpen) {
+        item.classList.add('open');
       }
-    });
+    };
 
-    link.addEventListener('touchend', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const isAlreadyOpen = item.classList.contains('open');
-
-        dropdownItems.forEach(i => i.classList.remove('open'));
-
-        if (!isAlreadyOpen) {
-          item.classList.add('open');
-        }
-      }
-    });
+    if ('ontouchstart' in window) {
+      link.addEventListener('touchend', toggleDropdown);
+    } else {
+      link.addEventListener('click', toggleDropdown);
+    }
   }
 });

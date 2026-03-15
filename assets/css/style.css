@@ -824,6 +824,12 @@ body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
+  .navbar__item--dropdown:hover .dropdown {
+    display: none;
+  }
+
+}
+
   /* Burger visible sur mobile */
   .burger {
     display: flex;
