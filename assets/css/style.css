@@ -1074,3 +1074,136 @@ body.dark .social__link {
   }
 
 }
+
+
+/* ===== BRUNCH ACCORDION ===== */
+.brunch__card {
+  background-color: #FFFFFF;
+  border: 0.5px solid #E8E0D8;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.brunch__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.brunch__header:hover {
+  background-color: #F5F0EC;
+}
+
+.brunch__header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brunch__name {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #1A1A1A;
+}
+
+.brunch__price {
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  color: #C0392B;
+}
+
+.brunch__arrow {
+  font-size: 0.85rem;
+  color: #888780;
+  transition: transform 0.3s ease;
+}
+
+.brunch__card.open .brunch__arrow {
+  transform: rotate(180deg);
+}
+
+.brunch__body {
+  display: none;
+  padding: 0 24px 20px;
+  border-top: 0.5px solid #E8E0D8;
+}
+
+.brunch__card.open .brunch__body {
+  display: block;
+}
+
+.brunch__choice-group {
+  margin-top: 20px;
+}
+
+.brunch__choice-title {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888780;
+  margin-bottom: 10px;
+}
+
+.brunch__choice-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 0.5px solid #E8E0D8;
+  font-size: 0.85rem;
+  color: #1A1A1A;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.brunch__choice-item:last-child {
+  border-bottom: none;
+}
+
+.brunch__choice-item input[type="checkbox"] {
+  accent-color: #C0392B;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.brunch__extra {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: #C0392B;
+}
+
+.brunch__included {
+  font-size: 0.82rem;
+  color: #888780;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* Dark mode brunch */
+body.dark .brunch__card {
+  background-color: #1A1A1A;
+  border-color: #2E2E2E;
+}
+
+body.dark .brunch__header:hover {
+  background-color: #222222;
+}
+
+body.dark .brunch__name {
+  color: #F0EDE8;
+}
+
+body.dark .brunch__body {
+  border-top-color: #2E2E2E;
+}
+
+body.dark .brunch__choice-item {
+  color: #F0EDE8;
+  border-bottom-color: #2E2E2E;
+}

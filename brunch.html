@@ -83,239 +83,159 @@
     <!-- BRUNCH -->
     <section id="brunch" class="section">
       <h2 class="section__title">Brunch Side</h2>
-      <p class="section__desc">Tous les samedis et dimanches.</p>
+      <p class="section__desc">Tous les samedis et dimanches — cliquez sur un menu pour voir les choix disponibles.</p>
 
-      <!-- LES MENUS -->
-      <div class="products__grid">
-
-        <div class="product-card fade-in">
-          <div class="product-card__img-placeholder"></div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Le Gourmand</h3>
-            <p class="product-card__desc">2 viennoiseries au choix · 1 ice coffee au choix · 1 Innocent ou 2 shots vitaminés · 1 bagel saumon ou bagel aux oeufs · 1 avocado toast · 2 pancakes ou 2 brioches perdues · Tiramisu maison ou salade de fruit · Nutella, confiture, beurre et Philadelphia</p>
-            <div class="product-card__prices">
-              <span class="product-card__price">1p — 22,50 €</span>
-              <span class="product-card__price-divider">|</span>
-              <span class="product-card__price">2p — 42,00 €</span>
-            </div>
+      <!-- LE GOURMAND -->
+      <div class="brunch__card">
+        <div class="brunch__header" data-target="gourmand">
+          <div class="brunch__header-left">
+            <span class="brunch__name">Le Gourmand</span>
+            <span class="brunch__price">1 personne — 22,50 € · 2 personnes — 42,00 €</span>
+          </div>
+          <span class="brunch__arrow">▾</span>
+        </div>
+        <div class="brunch__body" id="gourmand">
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Ice coffee — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Latte</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Cappuccino</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Noisette <span class="brunch__extra">+0,50 €</span></label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Caramel machiato <span class="brunch__extra">+0,50 €</span></label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Cécémel <span class="brunch__extra">+1,00 €</span></label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-coffee"> Cécémel proteiné <span class="brunch__extra">+1,50 €</span></label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Jus de fruits — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-jus"> Innocent fraise / cerise</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-jus"> Innocent matcha / kiwi</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-jus"> Jus d'orange frais maison</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-jus"> Jus carotte mandarine</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-jus"> Innocent Blue Spark Coconut</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Shots vitaminés — choisissez 2</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-shots"> Gingembre citron</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-shots"> Gingembre hibiscus</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-shots"> Gingembre curcuma</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Viennoiseries — choisissez 2</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-viennoiserie"> Croissant</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-viennoiserie"> Pain au chocolat</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-viennoiserie"> Pain suisse</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-viennoiserie"> Muffin blueberry banane</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Tiramisu ou salade de fruit</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-dessert"> Tiramisu spéculoos</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-dessert"> Tiramisu classique</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="gourmand-dessert"> Salade de fruit</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Inclus dans le menu</p>
+            <p class="brunch__included">1 bagel saumon ou bagel aux oeufs · 1 avocado toast · 2 pancakes ou 2 brioches perdues · Nutella, confiture, beurre et Philadelphia</p>
           </div>
         </div>
+      </div>
 
-        <div class="product-card fade-in">
-          <div class="product-card__img-placeholder"></div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Le Fit</h3>
-            <p class="product-card__desc">1 Innocent ou 2 shots vitaminés · 1 yaourt à boire Hipro ou 1 Cécémel proteiné (+0,50€) · 1 bagel saumon ou 1 avocado toast · 2 oeufs brouillés au thon · 1 toast beurre de cacahuète et bananes caramélisées · 1 toast pain gris Philadelphia extra proteiné et filet de dinde · 1 barre protéinée Hipro · Beurre, confiture et philadelphia</p>
-            <div class="product-card__prices">
-              <span class="product-card__price">1p — 25,00 €</span>
-              <span class="product-card__price-divider">|</span>
-              <span class="product-card__price">2p — 50,00 €</span>
-            </div>
+      <!-- LE FIT -->
+      <div class="brunch__card">
+        <div class="brunch__header" data-target="fit">
+          <div class="brunch__header-left">
+            <span class="brunch__name">Le Fit</span>
+            <span class="brunch__price">1 personne — 25,00 € · 2 personnes — 50,00 €</span>
+          </div>
+          <span class="brunch__arrow">▾</span>
+        </div>
+        <div class="brunch__body" id="fit">
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Jus de fruits — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-jus"> Innocent fraise / cerise</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-jus"> Innocent matcha / kiwi</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-jus"> Jus d'orange frais maison</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-jus"> Jus carotte mandarine</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-jus"> Innocent Blue Spark Coconut</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Shots vitaminés — choisissez 2</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-shots"> Gingembre citron</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-shots"> Gingembre hibiscus</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-shots"> Gingembre curcuma</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Hipro — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-hipro"> Barre choco caramel</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-hipro"> Barre choco banane</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-hipro"> Nestlé fitness chocolat</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="fit-hipro"> Yaourt à boire <span class="brunch__extra">+1,00 €</span></label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Inclus dans le menu</p>
+            <p class="brunch__included">1 bagel saumon ou 1 avocado toast · 2 oeufs brouillés au thon · 1 toast beurre de cacahuète et bananes caramélisées · 1 toast pain gris Philadelphia extra proteiné et filet de dinde · Beurre, confiture et philadelphia</p>
           </div>
         </div>
+      </div>
 
-        <div class="product-card fade-in">
-          <div class="product-card__img-placeholder"></div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Le Brunch Signature</h3>
-            <p class="product-card__desc">1 viennoiserie au choix · 1 ice coffee au choix · 1 fromage + 2 charcuteries au choix · 1 Innocent ou 2 shots vitaminés · 1 salade maison au choix · 1 bagel aux oeufs · 1 pan con tomate, jambon et roquette · Nutella, confiture, beurre et Philadelphia</p>
-            <div class="product-card__prices">
-              <span class="product-card__price">1p — 24,50 €</span>
-              <span class="product-card__price-divider">|</span>
-              <span class="product-card__price">2p — 48,00 €</span>
-            </div>
+      <!-- LE SIGNATURE -->
+      <div class="brunch__card">
+        <div class="brunch__header" data-target="signature">
+          <div class="brunch__header-left">
+            <span class="brunch__name">Le Brunch Signature</span>
+            <span class="brunch__price">1 personne — 24,50 € · 2 personnes — 48,00 €</span>
           </div>
+          <span class="brunch__arrow">▾</span>
         </div>
-
-      </div>
-
-      <!-- OPTIONS PAR MENU -->
-      <h3 class="category__title">Ce que vous choisissez dans chaque menu</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Le Gourmand</span>
-          <span class="brownie__option-desc">Ice coffee · Jus de fruits · Viennoiserie · Shots · Tiramisu spéculoos ou classique</span>
-          <span class="brownie__option-price">Au choix</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Le Fit</span>
-          <span class="brownie__option-desc">Jus de fruits · Shots · Hipro</span>
-          <span class="brownie__option-price">Au choix</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Le Signature</span>
-          <span class="brownie__option-desc">Viennoiseries · Charcuteries · Fromages · Jus · Ice coffee · Salades</span>
-          <span class="brownie__option-price">Au choix</span>
-        </div>
-      </div>
-
-      <!-- ICE COFFEE -->
-      <h3 class="category__title">Ice coffee</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Latte</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Cappuccino</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Noisette</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">+0,50 €</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Caramel machiato</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">+0,50 €</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Cécémel</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">+1,00 €</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Cécémel proteiné</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">+1,50 €</span>
-        </div>
-      </div>
-
-      <!-- JUS DE FRUITS -->
-      <h3 class="category__title">Jus de fruits</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Innocent fraise / cerise</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Innocent matcha / kiwi</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Jus d'orange frais maison</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Jus carotte mandarine</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Innocent Blue Spark Coconut</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-      </div>
-
-      <!-- SHOTS -->
-      <h3 class="category__title">Shots vitaminés</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Gingembre citron</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Gingembre hibiscus</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Gingembre curcuma</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-      </div>
-
-      <!-- VIENNOISERIES -->
-      <h3 class="category__title">Viennoiseries</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Croissants</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Pains au chocolat</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Pains suisses</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Muffins blueberry banane</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-      </div>
-
-      <!-- SALADES -->
-      <h3 class="category__title">Salades</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Tomates burrata et balsamique</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Pêches rôties burrata et balsamique</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Tomates mozzarella balsamique</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Salade classique</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Salade de fruits</span>
-          <span class="brownie__option-desc"></span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-      </div>
-
-      <!-- FROMAGES & CHARCUTERIES -->
-      <h3 class="category__title">Fromages & charcuteries</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Fromages</span>
-          <span class="brownie__option-desc">Gouda, mozzarella, brie ou camembert</span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Charcuteries</span>
-          <span class="brownie__option-desc">Mortadelle, jambon serrano, dés de salami, chorizo ou dinde (halal)</span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-      </div>
-
-      <!-- HIPRO -->
-      <h3 class="category__title">Hipro</h3>
-      <div class="brownie__options">
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Barre protéinée</span>
-          <span class="brownie__option-desc">Choco caramel, choco banane ou Nestlé fitness chocolat</span>
-          <span class="brownie__option-price">Inclus</span>
-        </div>
-        <div class="brownie__option-item">
-          <span class="brownie__option-name">Yaourt à boire</span>
-          <span class="brownie__option-desc">Banane, mangue, cookie & vanille ou framboise & fraise chocolat</span>
-          <span class="brownie__option-price">+1,00 €</span>
+        <div class="brunch__body" id="signature">
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Ice coffee — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-coffee"> Latte</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-coffee"> Cappuccino</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-coffee"> Noisette <span class="brunch__extra">+0,50 €</span></label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-coffee"> Caramel machiato <span class="brunch__extra">+0,50 €</span></label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-coffee"> Cécémel <span class="brunch__extra">+1,00 €</span></label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Jus de fruits — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-jus"> Innocent fraise / cerise</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-jus"> Innocent matcha / kiwi</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-jus"> Jus d'orange frais maison</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-jus"> Jus carotte mandarine</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-jus"> Innocent Blue Spark Coconut</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Fromage — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-fromage"> Gouda</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-fromage"> Mozzarella</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-fromage"> Brie</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-fromage"> Camembert</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Charcuteries — choisissez 2</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-charcuterie"> Mortadelle</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-charcuterie"> Jambon serrano</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-charcuterie"> Dés de salami</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-charcuterie"> Chorizo</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-charcuterie"> Dinde (halal)</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Salade — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-salade"> Tomates burrata et balsamique</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-salade"> Pêches rôties burrata et balsamique</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-salade"> Tomates mozzarella balsamique</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-salade"> Salade classique</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-salade"> Salade de fruits</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Viennoiserie — choisissez 1</p>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-viennoiserie"> Croissant</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-viennoiserie"> Pain au chocolat</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-viennoiserie"> Pain suisse</label>
+            <label class="brunch__choice-item"><input type="checkbox" name="sig-viennoiserie"> Muffin blueberry banane</label>
+          </div>
+          <div class="brunch__choice-group">
+            <p class="brunch__choice-title">Inclus dans le menu</p>
+            <p class="brunch__included">1 bagel aux oeufs · 1 pan con tomate, jambon et roquette · Nutella, confiture, beurre et Philadelphia</p>
+          </div>
         </div>
       </div>
 

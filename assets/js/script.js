@@ -90,3 +90,16 @@ if (themeToggle) {
     icon.classList.add('fa-sun');
   }
 }
+
+const brunchHeaders = document.querySelectorAll('.brunch__header');
+
+brunchHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const card = header.parentElement;
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.brunch__card').forEach(c => c.classList.remove('open'));
+    if (!isOpen) {
+      card.classList.add('open');
+    }
+  });
+});
