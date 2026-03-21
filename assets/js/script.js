@@ -62,3 +62,31 @@ dropdownItems.forEach(item => {
     }
   }
 });
+
+document.addEventListener('click', () => {
+  dropdownItems.forEach(i => i.classList.remove('open'));
+});
+
+const themeToggle = document.getElementById('theme-toggle');
+const icon = themeToggle ? themeToggle.querySelector('i') : null;
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  }
+}
