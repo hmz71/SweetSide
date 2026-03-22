@@ -1207,3 +1207,18 @@ body.dark .brunch__choice-item {
   color: #F0EDE8;
   border-bottom-color: #2E2E2E;
 }
+
+/* ===== BRUNCH DISCLAIMER ===== */
+.brunch__disclaimer {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #FAF7F5;
+  border-left: 2px solid #C0392B;
+  font-size: 0.78rem;
+  color: #888780;
+  line-height: 1.8;
+}
+
+body.dark .brunch__disclaimer {
+  background-color: #1A1A1A;
+}
