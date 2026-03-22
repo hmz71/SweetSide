@@ -103,3 +103,29 @@ brunchHeaders.forEach(header => {
     }
   });
 });
+
+const choiceGroups = document.querySelectorAll('.brunch__choice-group');
+
+choiceGroups.forEach(group => {
+  const titleText = group.querySelector('.brunch__choice-title');
+  if (!titleText) return;
+
+  const match = titleText.textContent.match(/choisissez (\d+)/);
+  if (!match) return;
+
+  const max = parseInt(match[1]);
+  const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const checked = group.querySelectorAll('input[type="checkbox"]:checked');
+      if (checked.length >= max) {
+        checkboxes.forEach(cb => {
+          if (!cb.checked) cb.disabled = true;
+        });
+      } else {
+        checkboxes.forEach(cb => cb.disabled = false);
+      }
+    });
+  });
+});
